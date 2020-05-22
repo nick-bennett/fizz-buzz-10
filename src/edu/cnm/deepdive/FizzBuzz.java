@@ -10,12 +10,10 @@ public class FizzBuzz {
 
   static String getStatus(int value) {
     String status = "";
-    boolean counterIsFizz = (value % 3 == 0);
-    boolean counterIsBuzz = (value % 5 == 0);
-    if (counterIsFizz) {
+    if (value % 3 == 0) {
       status += "fizz";
     }
-    if (counterIsBuzz) {
+    if (value % 5 == 0) {
       status += "buzz";
     }
     if (status.isEmpty()) {
